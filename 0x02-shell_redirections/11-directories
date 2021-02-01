@@ -1,0 +1,2 @@
+#!/bin/bash
+dinf -mindepth 1 -type d | wc -l
