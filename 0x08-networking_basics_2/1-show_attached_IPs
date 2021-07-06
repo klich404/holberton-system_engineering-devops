@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Bash script that configures an Ubuntu server
+
+ifconfig | grep inet | sed /:/d | awk '{print $2}'
