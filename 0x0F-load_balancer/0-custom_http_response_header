@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#config a new server
+
+sudo apt-get update
+sudo apt-get install nginx
+sed -i "listen 80 default_server/a \\\tadd_header X-Served-By $(hostname);" /etc/nginx/sites-available/default
