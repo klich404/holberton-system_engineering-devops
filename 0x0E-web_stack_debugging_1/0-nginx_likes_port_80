@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#find out what’s keeping your Ubuntu container’s Nginx
+#installation from listening on port 80
+
+#sites-avaible changes:
+sed -i 's/ ipv6only=on//g' /etc/nginx/sites-available/default
+
+#sites-enabled changes:
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sed -i 's/ ipv6only=on//g' /etc/nginx/sites-enabled/default
+sudo service nginx restart
