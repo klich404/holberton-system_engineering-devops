@@ -4,7 +4,6 @@ Using what you did in the task #0, extend your
 Python script to export data in the CSV format.
 """
 import csv
-from typing import List
 from requests import get
 from sys import argv
 
