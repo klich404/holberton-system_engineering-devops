@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """
+using https://jsonplaceholder.typicode.com/, for a given employee ID,
+returns information about his/her todo list progress.
 """
 from requests import get
 from sys import argv
