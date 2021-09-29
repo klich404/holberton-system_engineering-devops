@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Path parameters
+export token="yka-auj-i7f?from_ts=1632944112842&to_ts=1632947712842&live=true"
+# Curl command
+curl -X GET "https://api.datadoghq.com/api/v1/dashboard/public/${token}" \
+-H "Content-Type: application/json" \
+-H "DD-API-KEY: ${DD_API_KEY}" \
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
